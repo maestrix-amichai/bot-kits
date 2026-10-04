@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8"><title>Kit demo page</title>
+<style>
+  body{margin:0;font:28px/1.4 system-ui,sans-serif;background:#f4f1ff;color:#1b1b2f}
+  header{padding:60px 80px;background:linear-gradient(120deg,#5b3df5,#1fb6ff);color:#fff}
+  h1{margin:0 0 8px;font-size:64px} main{padding:40px 80px;display:grid;gap:28px}
+  input{font:inherit;padding:14px 18px;border-radius:12px;border:2px solid #5b3df5;width:420px}
+  button{font:inherit;padding:14px 28px;border:0;border-radius:12px;background:#5b3df5;color:#fff;cursor:pointer}
+  .card{padding:28px;border-radius:18px;background:#fff;box-shadow:0 8px 30px #5b3df522;height:260px}
+  #done{display:none;color:#0a8f5b;font-weight:700}
+</style>
+<header><h1>Kit demo</h1><div>A page recorded by tools/record.js</div></header>
+<main>
+  <div><input id="name" placeholder="Your name"> <button id="go">Say hello</button></div>
+  <div id="done"></div>
+  <div class="card">Card one</div><div class="card">Card two</div><div class="card">Card three</div>
+</main>
+<script>
+  document.getElementById('go').onclick = () => {
+    const d = document.getElementById('done');
+    d.textContent = 'Hello, ' + (document.getElementById('name').value || 'world') + '!'; d.style.display = 'block';
+  };
+</script>

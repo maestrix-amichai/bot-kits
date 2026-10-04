@@ -1,0 +1,22 @@
+{
+  "name": "hello",
+  "size": [1920, 1080],
+  "fps": 30,
+  "xfade": 0.4,
+  "bg": "#0d0d10",
+  "caption": { "size": 50, "y": 0.80 },
+  "scenes": [
+    { "id": "title", "act": "open", "kind": "card", "dur": 3.6, "bg": "#141a3a",
+      "lines": [ { "text": "Video pipeline kit", "size": 110, "y": 0.44, "in": 0.3, "show": 2.6 },
+                 { "text": "stills, recorders, captions, one command", "size": 46, "y": 0.58, "in": 0.9, "show": 2.0, "color": "#89dcb7" } ] },
+    { "id": "hero", "act": "still", "kind": "still", "asset": "work/hello/hero.png", "dur": 4.0,
+      "caps": [ ["A generated still, cover-cropped to the frame.", 0.4, 3.2] ] },
+    { "id": "recorded", "act": "ui", "kind": "clip", "asset": "work/hello_rec.mp4", "dur": 6.0,
+      "caps": [ ["A real browser session, recorded with Playwright.", 0.4, 2.6], ["Captions are Pillow pills, never drawtext.", 3.8, 2.0] ] },
+    { "id": "call", "act": "audio", "kind": "waveform", "audio": "work/hello/call.wav", "dur": 6.0,
+      "title": "Live call", "subtitle": "captions follow the transcript", "caps_from": "work/hello/call.json" },
+    { "id": "compare", "act": "split", "kind": "split", "left": "work/hello/hero.png", "right": "work/hello_rec.mp4", "dur": 4.0,
+      "labels": ["BEFORE", "AFTER"] },
+    { "id": "end", "act": "close", "kind": "card", "dur": 3.0, "lines": [ { "text": "Ready to make yours", "size": 96, "y": 0.5, "in": 0.3, "show": 2.0 } ] }
+  ]
+}

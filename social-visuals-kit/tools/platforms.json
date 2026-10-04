@@ -1,0 +1,9 @@
+{
+  "_note": "Recommended export sizes plus HOUSE limits (our own caps for fast, safe uploads). These are not the platforms' official limits. Platform rules change: read the platform's current help page before uploading anything unusual, then edit this file.",
+  "feed_portrait":  { "label": "Feed video or image, portrait 4:5", "size": [1080, 1350], "house_max_seconds": 60,  "house_max_mb": 50 },
+  "square":         { "label": "Feed video or image, square 1:1",   "size": [1080, 1080], "house_max_seconds": 60,  "house_max_mb": 50 },
+  "vertical":       { "label": "Reels, Shorts, Stories, 9:16",      "size": [1080, 1920], "house_max_seconds": 60,  "house_max_mb": 60 },
+  "landscape":      { "label": "Landscape 16:9",                    "size": [1920, 1080], "house_max_seconds": 180, "house_max_mb": 100 },
+  "article_wide":   { "label": "Video inside an article column",    "size": [1600, 1160], "house_max_seconds": 60,  "house_max_mb": 30 },
+  "link_card":      { "label": "Link preview / social cover image", "size": [1200, 630],  "house_max_seconds": 0,   "house_max_mb": 5 }
+}

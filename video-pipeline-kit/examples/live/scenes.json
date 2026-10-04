@@ -1,0 +1,9 @@
+{
+  "name": "live",
+  "size": [1920, 1080],
+  "scenes": [
+    { "id": "hero", "kind": "still", "asset": "work/live/hero.png", "dur": 6.6,
+      "caps_from": "work/live/vo.json",
+      "tracks": [ { "file": "work/live/vo.wav", "offset": 0.3 } ] }
+  ]
+}

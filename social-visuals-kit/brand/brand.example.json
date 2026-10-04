@@ -1,0 +1,26 @@
+{
+  "name": "Example Co",
+  "handle": "@exampleco",
+  "site": "example.com",
+  "cta": "Follow for more",
+  "logo": "logo.png",
+  "colors": {
+    "bg": "#10151F",
+    "fg": "#F4F1EC",
+    "muted": "#9AA3B2",
+    "accent": "#FF8A3D",
+    "accent_ink": "#10151F",
+    "panel": "#1A2130",
+    "rule": "#2B3446",
+    "soft": "#FFE1CC"
+  },
+  "fonts": {
+    "display": { "family": "DM Serif Display", "weights": "400", "fallback": "Georgia,serif" },
+    "body": { "family": "DM Sans", "weights": "400;600", "fallback": "system-ui,sans-serif" },
+    "mono": { "family": "DM Mono", "weights": "500", "fallback": "ui-monospace,Menlo,monospace" }
+  },
+  "voice": {
+    "do": ["plain words", "one idea per post", "first line is the hook"],
+    "dont": ["em dashes", "hype words", "claims we cannot show"]
+  }
+}

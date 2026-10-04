@@ -1,0 +1,1 @@
+{ "name": "social-visuals-kit", "private": true, "dependencies": { "playwright": "^1.48.0" } }

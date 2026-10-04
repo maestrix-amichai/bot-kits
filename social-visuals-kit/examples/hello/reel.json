@@ -1,0 +1,16 @@
+{
+  "canvas": [1080, 1350], "fps": 30,
+  "out": "out/hello.mp4",
+  "credit": "FOOTAGE: SYNTHETIC TEST PATTERN",
+  "segments": [
+    { "type": "card", "template": "title", "seconds": 2.5,
+      "fields": { "kicker": "Smoke test", "headline": "A reel made with the *kit*", "sub": "Cards, footage and captions from one spec." } },
+    { "type": "footage", "src": "out/footage.mp4", "start": 0, "seconds": 5, "hold": 2, "title": "Footage with captions",
+      "states": [
+        { "at": 0, "kicker": "THE CLIP", "body": "Captions sit under the footage and never cover it." },
+        { "at": 5, "kicker": "THE POINT", "headline": "One *clear* line", "body": "Then one sentence that backs it up.", "badge": "Checked against the source" }
+      ] },
+    { "type": "card", "template": "stat", "seconds": 2.5, "fields": { "number": "3x", "label": "faster to produce", "note": "Say where to follow." } }
+  ],
+  "stills": [ { "segment": 1, "at": 6.5, "out": "out/hello_poster.png" } ]
+}

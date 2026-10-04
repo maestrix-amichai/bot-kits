@@ -1,0 +1,19 @@
+{
+  "name": "hello_rec",
+  "viewport": { "width": 1280, "height": 720 },
+  "cursor": true,
+  "trim": ["start", "end"],
+  "steps": [
+    { "do": "goto", "url": "page.html" },
+    { "do": "wait", "ms": 800 },
+    { "do": "mark", "name": "start" },
+    { "do": "click", "selector": "#name" },
+    { "do": "type", "selector": "#name", "text": "Ada", "delay": 90 },
+    { "do": "click", "selector": "#go" },
+    { "do": "waitFor", "selector": "#done", "timeout": 5000 },
+    { "do": "wait", "ms": 900 },
+    { "do": "scroll", "by": 500, "ms": 1800 },
+    { "do": "wait", "ms": 600 },
+    { "do": "mark", "name": "end" }
+  ]
+}
